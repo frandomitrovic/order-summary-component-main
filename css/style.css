@@ -133,6 +133,9 @@ body {
 .attribution { 
     font-size: 11px; 
     text-align: center; 
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 1rem;
 }
 
 .attribution a { 
@@ -169,4 +172,8 @@ body {
         margin-left: 3em;
         margin-right: 3em;
       }
+
+    .attribution {
+        display: none;
+    }
 }
