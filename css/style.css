@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    /* Primary */
+
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+/* Neutral */
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+
+/* paragraph */
+    --fs-16: font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+    background-color: var(--Pale-blue);
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: repeat-x;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.summary-container {
+    width: 450px;
+    background-color: #fff;
+    border-radius: 1rem;
+    color: var(--Dark-blue);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.summary-title {
+    padding: 2rem 0 1rem 0;
+    font-weight: 900;
+    color: var(--Dark-blue);
+}
+
+.summary-description {
+    color: var(--Desaturated-blue);
+    padding-bottom: 1.5rem;
+    font-size: 16px;
+    line-height: 1.6;
+
+}
+
+.hero {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.plan-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--Very-pale-blue);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.plan {
+    display: flex;
+}
+
+.plan-info {
+    padding-left: 1rem;
+    text-align: center;
+}
+
+.btn {
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.change-btn {
+    color: var(--Bright-blue)
+}
+
+.change-btn:hover {
+    text-decoration: none;
+}
+
+.proceed-btn {
+    background-color: var(--Bright-blue);
+    color: #fff;
+    display: block;
+}
+
+.proceed-btn:hover, .change-btn:hover {
+    opacity: 0.8;
+}
+
+.cancel-btn {
+    margin: 1rem;
+    background-color: transparent;
+    color: var(--Desaturated-blue);
+}
+
+.cancel-btn:hover {
+    color: var(--Dark-blue);
+}
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+
+
+@media screen and (max-width: 540px) {
+    body {
+        background: url(/images/pattern-background-desktop.svg), var(--Pale-blue);
+        background-repeat: repeat-x;
+        background-size: contain;
+    }
+
+    .summary-title {
+        font-size: 1.7rem;
+        padding-top: 1.7rem;
+        padding-bottom: 0.7rem;
+    }
+
+    .summary-description {
+        font-size: 1.05rem;
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+    .plan-container {
+        margin: 0 3em 2em 3em;
+        padding: 1.5em;
+    }
+
+    .btn {
+        margin-left: 3em;
+        margin-right: 3em;
+      }
+}
